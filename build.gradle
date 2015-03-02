@@ -1,9 +1,10 @@
 buildscript {
+  ext.kotlinVersion = '0.10.770'
   repositories {
     mavenCentral()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:1.0.0'
+    classpath 'com.android.tools.build:gradle:1.1.0'
     classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.10.770'
   }
 }
@@ -22,6 +23,7 @@ repositories {
 }
 
 dependencies {
+  compile 'com.android.support:recyclerview-v7:21.0.3'
   compile 'com.android.support:support-v4:21.0.3'
 
   compile 'com.squareup.dagger:dagger:1.2.2'
