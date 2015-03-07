@@ -7,7 +7,7 @@ import android.content.Context
 /**
  * Created by joeyt on 3/1/15.
  */
-class BetterViewAnimator(context: Context, attrs: AttributeSet) : ViewAnimator(context, attrs) {
+open class BetterViewAnimator(context: Context, attrs: AttributeSet) : ViewAnimator(context, attrs) {
     var displayedChildId: Int
         get() = getChildAt(getDisplayedChild()).getId()
         set(id) {
